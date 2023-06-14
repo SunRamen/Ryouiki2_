@@ -1,1 +1,1 @@
-print("asas")
+print("a")
