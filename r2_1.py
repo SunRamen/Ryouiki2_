@@ -8,7 +8,7 @@ with zipfile.ZipFile('sample.zip','r') as zip_data:
             if int(name.split('_')[1]) % 2 != 0:
                 with zip_data.open(name, 'r') as file:
                     txt = file.read()
-                    num = int(txt.strip())
+                    num = int(txt)
                     sum += num
 
 print("奇数ファイルの合計",sum)
